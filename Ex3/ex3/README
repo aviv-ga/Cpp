@@ -1,0 +1,14 @@
+                500X500          |           50X50
+            *      |      +      |      *      |      +      |
+Turi    1.42577    | 0.00432524  | 0.00149719  | 4.3194e-05  |
+                   |             |             |             |
+eigen   7.25e-07   |  2.88e-07   |   2.6e-07   |  1.87e-07   |
+                   |             |             |             |
+
+* The eigen library is much better than my own implementation for add and mult operation between matrices.
+In my opinion the main difference is the fact that I used trivial algorithms for the operation, while there
+are much faster and clever algorithms.
+
+
+* The difference between mult and add operation is by its asymptotic runtime.
+My mult implementation has O(n^3) runtime, whereas my add implementation has O(n*m) runtime.
